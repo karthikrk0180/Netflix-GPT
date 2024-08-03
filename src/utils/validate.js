@@ -8,7 +8,7 @@ export const checkValidData = ( email, password, name, IsSignInForm) => {
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{6,}$/;
   const isPasswordValid = passwordRegex.test(password);
   if (!isPasswordValid) {
-    return "Password must be at least 6 characters long";
+    return "Enter Proper Valid Password";
   }
 
   // if (!IsSignInForm) {
