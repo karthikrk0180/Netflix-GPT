@@ -59,7 +59,7 @@ const Header = () => {
       {user && (
         <div className="flex p-3">
           <img className="w-12 h-12" alt="usericon" src={user.photoURL} />
-          {/* <p className="ml-2 text-white">{user.displayName}</p> */}
+          <p className="ml-2 text-white">{user.displayName}</p> 
           <button onClick={handleSignOut} className="font-bold text-white ml-4">
             Sign Out
           </button>
