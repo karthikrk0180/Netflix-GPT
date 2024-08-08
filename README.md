@@ -34,6 +34,8 @@
 - Found Image CDN URL
 - Made the browse page amazing with tailwind CSS
 - usePopularMovies custom hook
+- GPT Search Feature
+- (Bonus) Multi-Language Feature in web
 
 # Features
 - Login/Sign Up
