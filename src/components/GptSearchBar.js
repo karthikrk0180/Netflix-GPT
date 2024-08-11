@@ -32,14 +32,11 @@ const GptSearchBar = () => {
     try {
       const result = await model.generateContent(prompt);
       const response = await result.response.text();
-      console.log("GPT Response:", response);
 
       const gptMovies = response.split(",").map((movie) => movie.trim());
-      console.log("GPT Movies:", gptMovies);
 
       const promiseArray = gptMovies.map((movie) => searchMovieTmdb(movie));
       const tmdbResults = await Promise.all(promiseArray);
-      console.log("TMDB Results:", tmdbResults);
 
       dispatch(
         addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
@@ -50,9 +47,9 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="pt-[35%] md:pt-[10%] flex justify-center">
       <form
-        className=" w-1/2 bg-black grid grid-cols-12 rounded-lg"
+        className="  w-full md:w-1/2 bg-black grid grid-cols-12 rounded-lg"
         onSubmit={(e) => e.preventDefault()}
       >
         <input

@@ -20,7 +20,7 @@
 - Add hardcoded values to the constants file
 - Register TMDB api and create an app and get aacess token
 - Get data from TMDB now playing list API
-- Custom Hook for now Playing movies 
+- Custom Hook for now Playing movies
 - create movieSLice
 - Updated store with movies data
 - Planning for mainCOntainer and secondary container
@@ -36,18 +36,28 @@
 - usePopularMovies custom hook
 - GPT Search Feature
 - (Bonus) Multi-Language Feature in web
+- GPT search gemini api key
+- GPT search API call
+- Fetched GPT movies suggestions from TMDB
+- Created GPTSlice addded data
+- resued movie list component to make movie suggestion container
+- Memorisation
+- added .env file
+- adding .env file to gitignore
+- made our site Response
 
 # Features
+
 - Login/Sign Up
-    - Sign in/ Sign up form
-    - redirect to browse page
+  - Sign in/ Sign up form
+  - redirect to browse page
 - Browse (After Authetication)
-    - Header
-    - main Movie
-        - Trailer in BCG
-        - Title and description
-        - MovieSuggestions
-            - MovieLists * N
+  - Header
+  - main Movie
+    - Trailer in BCG
+    - Title and description
+    - MovieSuggestions
+      - MovieLists \* N
 - Netflix GPT
-    - Search Bar
-    - Movie suggestions
+  - Search Bar
+  - Movie suggestions
