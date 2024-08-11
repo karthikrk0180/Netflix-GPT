@@ -9,6 +9,8 @@ import { toggleGptSearchView } from "../utils/gptSlice";
 import { changeLangauge } from "../utils/configSlice";
 
 const Header = () => {
+
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
@@ -58,14 +60,18 @@ const Header = () => {
     dispatch(changeLangauge(e.target.value));
   };
 
+  const handleHomePage = () =>{
+    navigate("/");
+  }
+
   return (
     <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-screen flex flex-col md:flex-row justify-between ">
-      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
+      <img className="w-44 mx-auto md:mx-0" onClick={handleHomePage} src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-3 justify-between">
           {showGptSearch && (
             <select
-              className="p-2 m-2 bg-gray-500 text-white"
+              className="p-2 m-2 bg-red-600 text-white rounded-lg"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
