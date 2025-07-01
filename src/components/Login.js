@@ -67,7 +67,7 @@ const Login = () => {
       )
         .then((userCredential) => {
           // Signed in
-          const user = userCredential.user;
+          // User is automatically handled by onAuthStateChanged in Header component
         })
         .catch((error) => {
           const errorCode = error.code;

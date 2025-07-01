@@ -19,7 +19,7 @@ const useUpcomingMovies = () => {
 
   useEffect(() => {
     getUpcomingMovies();
-  }, []);
+  }, [getUpcomingMovies]);
 };
 
 export default useUpcomingMovies;
